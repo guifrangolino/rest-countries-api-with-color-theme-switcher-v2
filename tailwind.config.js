@@ -79,6 +79,7 @@ module.exports = {
     },
     screens: {
       'mobile-break': { 'max': '620px' },
+      'details-break': { 'max': '950px' },
     }
   },
   plugins: [require("tailwindcss-animate")],

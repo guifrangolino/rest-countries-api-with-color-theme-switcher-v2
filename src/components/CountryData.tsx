@@ -83,7 +83,7 @@ export function CountryData() {
   }
 
   return (
-    <main className="w-full max-w-[1440px] m-auto px-4">
+    <main className="w-full max-w-[1440px] m-auto px-4 details-break:pb-10">
       <Button asChild variant={"outline"} className="font-semibold mt-4 mb-10 shadow-sm bg-primary w-fit">
         <Link to={'/'} className="flex px-6">
           <MoveLeft className="w-5 h-5 mr-2" />
@@ -91,7 +91,7 @@ export function CountryData() {
         </Link>
       </Button>
       {!isFetching ?
-        <div className="flex justify-between gap-5">
+        <div className="flex justify-between gap-5 details-break:flex-col details-break:items-center details-break:gap-12">
 
           <motion.img
             src={data?.flags.png}
@@ -102,7 +102,7 @@ export function CountryData() {
             transition={{ duration: 0.5 }}
           />
 
-          <div className="max-w-[50%] w-full flex flex-col justify-evenly mx-auto">
+          <div className="max-w-[50%] w-full flex flex-col justify-evenly mx-auto details-break:max-w-none details-break:gap-7">
 
             <motion.h2
               className="font-bold text-3xl"
@@ -111,9 +111,9 @@ export function CountryData() {
               transition={{ duration: 0.5 }}
             >{data?.name.common}</motion.h2>
 
-            <div className="flex justify-evenly gap-3">
+            <div className="flex justify-evenly gap-3 details-break:flex-col details-break:gap-6">
               <motion.div
-                className="flex flex-col gap-y-2 w-1/2"
+                className="flex flex-col gap-y-2 w-1/2 details-break:w-full"
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.5 }}
@@ -125,7 +125,7 @@ export function CountryData() {
                 <p className="text-sm"><span className="font-bold">Capital: </span>{data?.capital.join(', ')}</p>
               </motion.div>
               <motion.div
-                className="flex flex-col gap-y-2 w-1/2"
+                className="flex flex-col gap-y-2 w-1/2 details-break:w-full"
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.5 }}
@@ -153,7 +153,7 @@ export function CountryData() {
                     delay: index / 5 + 0.2,
                   }}
                 >
-                  <Button asChild variant={"outline"} className="shadow-sm w-fit text-xs py-1">
+                  <Button asChild variant={"outline"} className="shadow-sm w-fit text-xs py-1 bg-primary">
                     <Link to={`/${border}`} className="flex w-full h-full">{border}</Link>
                   </Button>
                 </motion.li>
