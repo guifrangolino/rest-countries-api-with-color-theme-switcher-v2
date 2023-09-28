@@ -4,7 +4,7 @@
 
 ## Descrição
 
-Este é o meu projeto para o Desafio Frontend Mentor, que consiste em criar um catálogo de países que consome uma API para listar todos os países do mundo e exibir seus dados. O projeto foi desenvolvido utilizando React, Typescript, TailwindCSS, Framer Motion, Radix UI, React Router, React Query e Axios.
+Este é o meu projeto para o Desafio Frontend Mentor, que consiste em criar um catálogo de países que consome uma API para listar todos os países do mundo e exibir seus dados. O projeto foi desenvolvido utilizando React, Typescript, TailwindCSS, Framer Motion, Shadcn UI, React Router, React Query e Axios.
 
 [Link do Desafio](https://www.frontendmentor.io/challenges/rest-countries-api-with-color-theme-switcher-5cacc469fec04111f7b848ca)
 [Link Live](https://rest-countries-api-with-color-theme-switcher-v2-one.vercel.app)
