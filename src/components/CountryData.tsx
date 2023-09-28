@@ -82,6 +82,8 @@ export function CountryData() {
     return number.toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",");
   }
 
+  window.scrollTo(0, 0);
+
   return (
     <main className="w-full max-w-[1440px] m-auto px-4 details-break:pb-10">
       <Button asChild variant={"outline"} className="font-semibold mt-4 mb-10 shadow-sm bg-primary w-fit">
